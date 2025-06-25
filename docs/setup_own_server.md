@@ -55,7 +55,6 @@ services:
   couchdb:
     image: couchdb:latest
     container_name: couchdb-for-ols
-    user: 1000:1000
     environment:
       - COUCHDB_USER=${username}
       - COUCHDB_PASSWORD=${password}
